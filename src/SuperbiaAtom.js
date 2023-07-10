@@ -7,7 +7,7 @@ class SuperbiaAtom extends Atom {
     this.documentKeys = documentKeys;
   }
 
-  parseResult(result, data = {}) {
+  parseResult = (result, data = {}) => {
     if (result === null) {
       return null;
     }
@@ -43,7 +43,7 @@ class SuperbiaAtom extends Atom {
     }
 
     return result;
-  }
+  };
 }
 
 export default SuperbiaAtom;

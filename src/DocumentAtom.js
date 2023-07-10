@@ -19,7 +19,7 @@ export class DocumentAtom extends SuperbiaAtom {
       });
   }
 
-  parseData(data) {
+  parseData = (data) => {
     const newData = {};
 
     Object.values(data).forEach((result) => {
@@ -45,5 +45,5 @@ export class DocumentAtom extends SuperbiaAtom {
     }
 
     this.update();
-  }
+  };
 }

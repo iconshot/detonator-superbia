@@ -13,7 +13,7 @@ export class RequestAtom extends SuperbiaAtom {
     return {};
   }
 
-  parseRequestResult(result) {
+  parseRequestResult = (result) => {
     if (
       result !== null &&
       typeof result === "object" &&
@@ -24,7 +24,7 @@ export class RequestAtom extends SuperbiaAtom {
     } else {
       return this.parseResult(result);
     }
-  }
+  };
 
   request = async (key, endpoints, payload = null) => {
     key = key !== null && key !== undefined ? key : Date.now().toString();
