@@ -1,8 +1,8 @@
 import { Atom } from "detonator";
 
 class SuperbiaAtom extends Atom {
-  constructor(documentKeys) {
-    super();
+  constructor(store, documentKeys) {
+    super(store);
 
     this.documentKeys = documentKeys;
   }

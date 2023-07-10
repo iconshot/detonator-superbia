@@ -1,8 +1,8 @@
 import SuperbiaAtom from "./SuperbiaAtom";
 
 export class DocumentAtom extends SuperbiaAtom {
-  constructor(client, documentKeys) {
-    super(documentKeys);
+  constructor(store, client, documentKeys) {
+    super(store, documentKeys);
 
     this.data = {};
 
