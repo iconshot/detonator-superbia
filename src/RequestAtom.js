@@ -26,7 +26,7 @@ export class RequestAtom extends SuperbiaAtom {
     }
   }
 
-  onRequest = async (key, endpoints, payload = null) => {
+  request = async (key, endpoints, payload = null) => {
     key = key !== null && key !== undefined ? key : Date.now().toString();
 
     this.data[key] = {
@@ -92,7 +92,7 @@ export class RequestAtom extends SuperbiaAtom {
     }
   };
 
-  onLoad = async (key, endpoints, payload = null) => {
+  load = async (key, endpoints, payload = null) => {
     const interceptors = this.intercept();
 
     const endpointKey = Object.keys(endpoints)[0];

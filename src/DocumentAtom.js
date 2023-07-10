@@ -9,17 +9,17 @@ export class DocumentAtom extends SuperbiaAtom {
     client
       .on("request", (endpoints, emitter) => {
         emitter.on("data", (data) => {
-          this.onData(data);
+          this.parseData(data);
         });
       })
       .on("subscribe", (endpoint, emitter) => {
         emitter.on("data", (data) => {
-          this.onData(data);
+          this.parseData(data);
         });
       });
   }
 
-  onData(data) {
+  parseData(data) {
     const newData = {};
 
     Object.values(data).forEach((result) => {
