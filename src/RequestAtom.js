@@ -4,8 +4,6 @@ export class RequestAtom extends SuperbiaAtom {
   constructor(store, client, documentKeys) {
     super(store, documentKeys);
 
-    this.data = {};
-
     this.client = client;
   }
 

@@ -4,8 +4,6 @@ export class DocumentAtom extends SuperbiaAtom {
   constructor(store, client, documentKeys) {
     super(store, documentKeys);
 
-    this.data = {};
-
     client
       .on("request", (endpoints, emitter) => {
         emitter.on("data", (data) => {

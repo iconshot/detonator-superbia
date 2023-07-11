@@ -4,6 +4,8 @@ class SuperbiaAtom extends Atom {
   constructor(store, documentKeys) {
     super(store);
 
+    this.data = {};
+
     this.documentKeys = documentKeys;
   }
 
@@ -43,6 +45,10 @@ class SuperbiaAtom extends Atom {
     }
 
     return result;
+  };
+
+  clear = () => {
+    this.data = {};
   };
 }
 

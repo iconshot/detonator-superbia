@@ -1,6 +1,6 @@
 {
   "name": "@detonator/superbia",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Integrate Detonator and a Superbia client.",
   "repository": {
     "type": "git",
