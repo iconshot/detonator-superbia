@@ -1,4 +1,4 @@
-import { Atom } from "detonator";
+import { Atom } from "rioter";
 
 class SuperbiaAtom extends Atom {
   constructor(store, documentKeys) {

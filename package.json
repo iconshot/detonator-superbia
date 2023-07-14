@@ -1,18 +1,18 @@
 {
-  "name": "@detonator/superbia",
+  "name": "@rioter/superbia",
   "version": "1.0.5",
-  "description": "Integrate Detonator and a Superbia client.",
+  "description": "Integrate Rioter and a Superbia client.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iconshot/detonator-superbia.git"
+    "url": "https://github.com/iconshot/rioter-superbia.git"
   },
   "main": "index.js",
   "keywords": [
-    "detonator",
+    "rioter",
     "superbia"
   ],
   "license": "MIT",
   "peerDependencies": {
-    "detonator": "^1.0.1"
+    "rioter": "^1.0.0"
   }
 }
